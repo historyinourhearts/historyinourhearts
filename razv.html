@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопки-ссылки с картинками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .buttons-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .image-link {
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .image-link:hover {
+            transform: scale(1.05);
+            filter: brightness(1.05);
+        }
+        
+        .image-link img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border: 3px solid #ffffff;
+        }
+        
+        .image-link p {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <!-- Первая кнопка-ссылка -->
+        <a href="/historyinourhearts/animation" class="image-link" target="_blank">
+            <img src="fron.png" alt="Страница 1">
+            <p>Главная анимация</p>
+        </a>
+        
+        <!-- Вторая кнопка-ссылка -->
+        <a href="/historyinourhearts/videonew" class="image-link" target="_blank">
+            <img src="https://via.placeholder.com/250?text=Страница+2" alt="Страница 2">
+            <p>Другие анимации</p>
+        </a>
+        
+        <!-- Третья кнопка-ссылка -->
+        <a href="/historyinourhearts/info" class="image-link" target="_blank">
+            <img src="https://via.placeholder.com/250?text=Страница+3" alt="Страница 3">
+            <p>Информация о ВОВ</p>
+        </a>
+    </div>
+</body>
+</html>
